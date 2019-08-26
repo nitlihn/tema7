@@ -9,12 +9,17 @@
 
 <body>
     <script>
-        let længde = 3;
-        let bredde = 5;
+        let længde = 8;
+        let bredde = 15;
         let areal = længde * bredde;
-        console.log(areal);
+        let resultat;
 
+        if (areal < 100) {
+            console.log("Arealet er for lille");
+        } else if (areal < 200) {
+            console.log("Arealet er okay");
+        } else {
+            console.log("Arealet er for stort");
+        }
     </script>
-</body>
-
-</html>
+</body></html>

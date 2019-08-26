@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    Længde<input type="number" id="længde">
+    Bredde<input type="number" id="bredde">
+    <button>Udregn</button>
+
+    <script>
+        let længde;
+        let bredde;
+        document.querySelector("button").addEventListener("click", udregnAreal);
+
+        function udregnAreal() {
+            let længde = document.querySelector("#længde").value;
+            let bredde = document.querySelector("#bredde").value;
+            let areal = længde * bredde;
+            console.log(`Arealet er ${areal}!`)
+        }
+    </script>
+</body></html>
